@@ -5,6 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      header{
+        text-align: center;
+      }
+
+      main{
+        width: 280px;
+        padding: 20px 20px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 192, 203, 1);
+      }
+
+      input:not(input[type=radio],input[type=checkbox]),select{
+        width: 240px;
+      }
+      
+      .bold{
+        font-weight: bold;
+      }
+
+      .traveller_info>div,.travel>div,.discount_code,.terms{
+        padding-bottom: 10px;
+      }
+
+      hr{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        width: 200px;
+      }
+
+    </style>
   </head>
   <body>
     <header>
@@ -15,7 +53,7 @@
       <form action="">
         <div class="traveller_info">
           <div class="name">
-            <label for="Fullname">Full name* :<br /></label>
+            <label for="Fullname" class="bold">Full name* :<br /></label>
             <input
               type="text"
               name="Fullname"
@@ -25,7 +63,7 @@
             />
           </div>
           <div class="email">
-            <label for="Email">Email addres* :<br /></label>
+            <label for="Email" class="bold">Email addres* :<br /></label>
             <input
               type="email"
               name="Email"
@@ -35,7 +73,7 @@
             />
           </div>
           <div class="package">
-            <label for="Package">Select Tour Package* :<br /></label>
+            <label for="Package" class="bold">Select Tour Package* :<br /></label>
             <select name="Package" id="Package">
               <option value="goa">Goa</option>
               <option value="premium">Premium</option>
@@ -43,18 +81,18 @@
             </select>
           </div>
         </div>
-
+        <hr>
         <div class="travel">
           <div class="arrivedate">
-            <label for="Arrivedate">Full name* :<br /></label>
+            <label for="Arrivedate" class="bold">Full name* :<br /></label>
             <input type="date" name="Arrivedate" id="Arrivedate" required />
           </div>
           <div class="number_person">
-            <label for="No_person">Number of persons* :<br /></label>
+            <label for="No_person" class="bold">Number of persons* :<br /></label>
             <input type="number" name="No_person" id="No_person" placeholder="UNKNOW_TYPE" min="0" max="10"  required />
           </div>
           <div class="avail">
-            <span>What would you want to avail?* :<br /></ห>
+            <span class="bold">What would you want to avail?* :<br /></ห></span>
             <label for="option_boarding">
                 Boarding
                 <input type="checkbox" name="option_boarding" id="option_boarding">
@@ -72,9 +110,9 @@
 
           </div>
         </div>
-
+        <hr>
         <div class="discount_code">
-            <label for="discount">Discount Coupon code :<br /></label>
+            <label for="discount" class="bold">Discount Coupon code :<br /></label>
             <input
               type="text"
               name="discount"
@@ -82,9 +120,9 @@
               placeholder="UNKNOW_TYPE"
               >
         </div>
-
+        <hr>
         <div class="terms">
-            <label for="discount">Terms and condition* :<br /></label>
+            <label for="discount" class="bold">Terms and condition* :<br /></label>
             <label for="agree">
               <input type="radio" name="term" id="agree">I agree
             </label>
