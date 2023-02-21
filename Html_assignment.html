@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+  </head>
+  <body>
+    <header>
+      <h1>Travel Reservation Form</h1>
+      <h3>* denotes mandotory</h3>
+    </header>
+    <main>
+      <form action="">
+        <div class="traveller_info">
+          <div class="name">
+            <label for="Fullname">Full name* :<br /></label>
+            <input
+              type="text"
+              name="Fullname"
+              id="Fullname"
+              placeholder="FirstName and LastName"
+              required
+            />
+          </div>
+          <div class="email">
+            <label for="Email">Email addres* :<br /></label>
+            <input
+              type="email"
+              name="Email"
+              id="Email"
+              placeholder="Email addres"
+              required
+            />
+          </div>
+          <div class="package">
+            <label for="Package">Select Tour Package* :<br /></label>
+            <select name="Package" id="Package">
+              <option value="goa">Goa</option>
+              <option value="premium">Premium</option>
+              <option value="firstclass">Firstclass</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="travel">
+          <div class="arrivedate">
+            <label for="Arrivedate">Full name* :<br /></label>
+            <input type="date" name="Arrivedate" id="Arrivedate" required />
+          </div>
+          <div class="number_person">
+            <label for="No_person">Number of persons* :<br /></label>
+            <input type="number" name="No_person" id="No_person" placeholder="UNKNOW_TYPE" min="0" max="10"  required />
+          </div>
+          <div class="avail">
+            <span>What would you want to avail?* :<br /></ห>
+            <label for="option_boarding">
+                Boarding
+                <input type="checkbox" name="option_boarding" id="option_boarding">
+            </label>
+            <br />
+            <label for="option_fooding">
+                Fooding
+                <input type="checkbox" name="option_fooding" id="option_fooding">
+            </label>
+            <br />
+            <label for="option_sight_seeing">
+                Sight seeing
+                <input type="checkbox" name="option_sight_seeing" id="option_sight_seeing">
+            </label>
+
+          </div>
+        </div>
+
+        <div class="discount_code">
+            <label for="discount">Discount Coupon code :<br /></label>
+            <input
+              type="text"
+              name="discount"
+              id="discount"
+              placeholder="UNKNOW_TYPE"
+              >
+        </div>
+
+        <div class="terms">
+            <label for="discount">Terms and condition* :<br /></label>
+            <label for="agree">
+              <input type="radio" name="term" id="agree">I agree
+            </label>
+            <label for="disagree">
+              <input type="radio" name="term" id="disagree">I disagree
+            </label>
+        </div>
+
+        <button type="submit">Complete reservation</button>
+      </form>
+    </main>
+  </body>
+</html>
